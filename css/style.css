@@ -1,0 +1,475 @@
+:root {
+	--breakpointDesktopMobile: 768;
+}
+
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 0;
+    padding: 0; */
+    font-family: 'Roboto';
+}
+
+
+.container{
+    width: calc(100% - 20px);
+    max-width: 1920px;
+    margin: 10px auto; /* vyrobi ramecek okolo*/
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    position: relative;
+    /* justify-content: center; */
+  }
+
+  .container-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+    position: relative;
+    max-width: 1440px;
+  }
+
+.navigation {
+    width: 100%;
+    top: 0;
+    background-color: #33292a;
+    color: white;
+    display: block;
+
+}
+
+
+
+.navigation-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #33292a;
+    padding: 20px 10%; /* Vztvori prostor kolem menu */
+}
+
+
+.navigation-hamburger {
+    display: none;
+    height: 45px;
+    padding-right: 20px;
+}
+
+.menu-style {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    text-align: center;
+    background-color: #33292a;
+    color: white;
+    list-style: none; /* Odebere tecku elementu li */
+}
+
+.menu-style a{
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.image-container-travel-assist {
+    position: relative;
+    flex-basis: 100%;
+    height: 804px;
+    background-image: url(../images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-size: cover;
+}
+
+
+.image-container-travel-assist-text-content {
+    font-size: 50px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: right;
+    position: absolute;
+    top: 40%;
+    width: 30%;
+    left: 50%;
+    padding: 100px;
+    padding: 20%;
+}
+
+.image-container-travel-assist h8 {
+    font-size: 100px;
+    color: #ffffff;
+    text-align: right;
+    position: absolute;
+    top: 40%;
+    width: 40%;
+    left: 40%;
+    padding: 20px;
+}
+
+.section-our-trips {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 10%;
+}
+
+.section-our-trips-box-text {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-our-trips-box {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: calc((100% / 3) - 20px);
+        margin: 5px;
+        height: 222px;
+        background-size: cover;
+        border-radius: 5px;
+        object-fit: contain;
+}
+
+.section-our-trips-box-url1
+    {
+
+        background-image: url(../images/simon-english-48nerZQCHgo-unsplash.jpg);
+ }
+
+ .section-our-trips-box-url2
+    {
+
+        background-image: url(../images/james-wheeler-ZOA-cqKuJAA-unsplash.jpg);
+ }
+ .section-our-trips-box-url3
+    {
+
+        background-image: url(../images/daniel-tseng-73lmMKhi2U8-unsplash.jpg);
+ }
+ .section-our-trips-box-url4
+    {
+
+        background-image: url(../images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg);
+ }
+
+ .section-our-trips-box-url6
+    {
+
+        background-image: url(../images/patrick-szylar-45bM3XGqnDE-unsplash.jpg);
+ }
+
+ .section-our-trips-box-url7
+    {
+
+        background-image: url(../images/chung-yee-tsang-wqxCKM0R6R8-unsplash.jpg);
+ }
+
+ .section-our-trips-box-url8
+    {
+
+        background-image: url(../images/julian-bialowas-ilkTnuMunP8-unsplash.jpg);
+ }
+
+
+ .section-our-trips-box-url9
+    {
+
+        background-image: url(../images/matej-drha-rbDzMcJsBkY-unsplash.jpg);
+ }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.responsive-img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.section_aboutus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10%;
+}
+
+.box_aboutus {
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.section_whatwedo {
+    max-width: 1440px;
+    background-color: #333333 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box_whatwedo {
+    padding: 10px 20px;
+    color: #ffffff;
+    margin-left: 10%;/*netradicni vycentrovani*/
+    margin-right: 10%;/*netradicni vycentrovani*/
+}
+
+.box_what_we_do_icons {
+    display: flex;
+    align-items: center;
+
+    /* background-color: #33292a; */
+    background-color: #333333 ;
+    padding: 20px 10%; /* Vztvori prostor kolem menu */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.what_we_do_icons {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    height: 131px;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+
+.text-content {
+text-align: justify;
+font-family: Roboto;
+font-size: small;
+font-weight: 300;
+}
+
+.image-container-car {
+    position: relative;
+    background-image: url(../icons/car.png);
+    background-color: white;
+    display: flex;
+    background-size: cover;
+}
+
+.section_where-to {
+    max-width: 1440px;
+    background-color: #644b4f ;
+    display: flex;
+    flex-direction: row;
+}
+
+.box_where-to {
+    padding: 10px;
+    color: #ffffff;
+    flex-basis: 20%;
+}
+
+.box_where-to-title {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    flex-basis: 30%;
+    margin-left: 10%;/*netradicni vycentrovani*/
+}
+
+.box_where-to-txt {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    flex-basis: 70%;
+    margin-right: 10%;/*netradicni vycentrovani*/
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.where_to_button {
+    padding: 10px;
+    font-weight: bold;
+    position:absolute;
+    bottom: 15px;
+    left: 15px; 
+    border-radius: 4px;
+}
+
+.section_review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10%;
+}
+
+.box_review-main {
+        padding: 10px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+.box_review {
+    width: 50%;
+}
+    
+.box_review-boxes {
+        padding: 10px 20px;
+}
+
+.box_review-main h3 {
+        text-align: center;
+}
+
+.img_kulaty {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: block;
+        margin: auto; 
+        padding: 15px;
+}
+
+.signature {
+     text-align: center;
+     font-weight: bold;
+}
+
+.section-fotogallery {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin: 10%;
+}
+
+.section-fotogallery-box  {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: calc((100% / 2) - 20px);
+            height: 420px;
+            background-size: cover;
+            object-fit: contain;
+}
+    
+.section-fotogallery-url1 {
+            background-image: url(../images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+    
+.section-fotogallery-url2 {
+            background-image: url(../images/omer-salom-LoijtQXXNhs-unsplash.jpg);
+}
+     .section-fotogallery-url3
+        {    
+            background-image: url(../images/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg);
+     }
+     .section-fotogallery-url4
+        {
+            background-image: url(../images/daniel-tseng-73lmMKhi2U8-unsplash.jpg);
+     }
+
+footer p {
+        text-align: center;
+}
+
+.footer-travel-assist {    
+        background-color: #33292a;
+        color: white;
+        padding: 30px;
+}
+
+footer a {
+        color:  #EFA69D;        
+}
+
+/* Navstevnik s mobilem bude mit aboutUs sekci boxz pod sebou, dalsi sekce obdobne*/
+@media only screen and (max-width: 768px) {
+.navigation-ul {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: right;     
+}
+
+.navigation-ul {
+   visibility: hidden;
+}
+
+.navigation-hamburger {
+        display:block; 
+}
+
+.section_aboutus {
+        display: block;
+}
+
+.box_aboutus {
+        padding: 10px 20px;
+        width: 100%;
+}
+
+.box_what_we_do_icons {
+        display: block;
+        align-items: center;
+        justify-content: center;
+}
+
+.image-container-travel-assist {
+    height: 780px;
+}
+
+.section-our-trips {
+        display: block;
+}
+
+.section_where-to {
+        display: block;
+        align-items: center;
+        justify-content: center;
+}
+
+.section-review {
+        display: block;
+}
+
+.box_review-main {
+    display: block;
+}
+
+.box_review {
+    width: 100%;
+}
+
+.section-fotogallery {
+    display: block;
+}
+
+
+.box_where-to-title {
+    margin-left: 0;/*netradicni vycentrovani*/
+    margin-bottom: 0;
+}
+
+.box_where-to-txt {
+        margin-top: 0;
+        margin-bottom: 20%;
+        margin-right: 0;/*netradicni vycentrovani*/
+    }    
+}
+
